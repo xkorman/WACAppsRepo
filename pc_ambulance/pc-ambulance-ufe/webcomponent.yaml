@@ -14,7 +14,7 @@ spec:
       details: Spravuje zoznam pacientov čakajúcich na vyšetrenie v ambulancii
       attributes:
         - name: base-path
-          value: /pc-ambulance-wl/
+          value: /ui/pc-ambulance-wl/
         - name: api-uri
           value: /pc-waiting-list-api
         - name: ambulance
