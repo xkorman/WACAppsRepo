@@ -9,9 +9,7 @@ spec:
       path: msevcik-ambulance-wl
       title: Zoznam čakajúcich msevcik
       details: Spravuje zoznam pacientov čakajúcich na vyšetrenie v ambulancii
-      attributes:                   
-        - name: base-path
-          value: /ui/msevcik-ambulance-wl/
+      attributes:
         - name: api-uri
           value: /msevcik-waiting-list-api
         - name: ambulance
