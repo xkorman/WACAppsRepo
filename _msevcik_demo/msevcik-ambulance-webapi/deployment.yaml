@@ -14,7 +14,7 @@
        spec:
          containers:
          - name: msevcik-ambulance-webapi-container
-           image: msevcik/ambulance-webapi:1.0.0-38
+           image: msevcik/ambulance-webapi-demo:1.0.0-38
            imagePullPolicy: Always
            ports:
            - name: webapi-port
