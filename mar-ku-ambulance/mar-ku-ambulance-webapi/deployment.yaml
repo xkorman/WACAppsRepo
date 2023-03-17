@@ -1,0 +1,44 @@
+ apiVersion: apps/v1
+ kind: Deployment
+ metadata:
+   name: mar-ku-ambulance-webapi
+ spec:
+   replicas: 1
+   selector:
+       matchLabels:
+         pod: mar-ku-ambulance-webapi-label
+   template:
+       metadata:
+         labels:
+           pod: mar-ku-ambulance-webapi-label
+       spec:
+         containers:
+         - name: mar-ku-ambulance-webapi-container
+           image: kuchto/ambulance-webapi:1.0.0-23
+           imagePullPolicy: Always
+           ports:
+           - name: webapi-port
+             containerPort: 8080
+           resources:
+             requests:
+               memory: "32Mi"
+               cpu: "0.1"
+             limits:
+               memory: "128Mi"
+               cpu: "0.3"
+           env:
+              - name: MONGODB_URI
+                valueFrom:
+                  configMapKeyRef:
+                    name: mongodb-configmap
+                    key: mongodb_uri
+              - name: MONGODB_USERNAME
+                valueFrom:
+                  secretKeyRef:
+                    name: mongodb-secret
+                    key: mongo-root-username
+              - name: MONGODB_PASSWORD
+                valueFrom:
+                  secretKeyRef:
+                    name: mongodb-secret
+                    key: mongo-root-password

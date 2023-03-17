@@ -1,0 +1,7 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+- ./mar-ku-ambulance-ufe
+- ./mar-ku-ambulance-webapi
+commonLabels:
+  app: mar-ku-ambulance
