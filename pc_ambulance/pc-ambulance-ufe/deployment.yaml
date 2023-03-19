@@ -3,10 +3,10 @@ kind: Deployment
 metadata:
   name: pc-ambulance-ufe-deployment      # meno deployment-u od ktorého sa odvádza meno podu
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
-        pod: pc-ambulance-ufe-label    # tento riadok je len označenie štítku 
+      pod: pc-ambulance-ufe-label    # tento riadok je len označenie štítku 
                                     # key-value pair pod=ambualnce ufe
                                     # určený pre výber podov s rovnakým štítkom
   template:                    # šablóna pre vytvorenie replík podov
