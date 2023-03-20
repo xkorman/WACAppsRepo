@@ -13,7 +13,7 @@ spec:
   template: # šablóna pre vytvorenie replík podov
     metadata:
       labels:
-        pod: mdambulance-ufe-label # štítky podu
+        pod: md-ambulance-ufe-label # štítky podu
     spec:
       containers:
         - name: md-ambulance-ufe-container # meno kontaineru - v pod-e ich môže byť viac
