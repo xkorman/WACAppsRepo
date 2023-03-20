@@ -7,7 +7,7 @@ spec:
   navigation:
     - element: xholubov-ambulance-wl-app
       path: xholubov-ambulance-wl
-      title: Zoznam čakajúcich
+      title: Zoznam čakajúcich xholubov
       details: Spravuje zoznam pacientov čakajúcich na vyšetrenie v ambulancii
       attributes:
         - name: base-path
