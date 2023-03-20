@@ -10,6 +10,7 @@ resources:
   - ../../jm-lm-ambulance
   - ../../xholubov_ambulance
   - ../../adp-team
+  - ../../m-nem-ambulance
   - ../../janec-ambulance  
   - ../../ij-ambulance
   - ../../pirky

@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: m-nem-ambulance-ufe-deployment      # meno deployment-u od ktorého sa odvádza meno podu
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+        pod: m-nem-ambulance-ufe-label   
+  template:                    # šablóna pre vytvorenie replík podov
+    metadata:
+      labels: 
+        pod: m-nem-ambulance-ufe-label    # štítky podu
+    spec:
+      containers:
+      - name: m-nem-ambulance-ufe-container # meno kontaineru - v pod-e ich môže byť viac
+        image: nemcovam/ambulance-ufe
+        imagePullPolicy: Always
+        ports:
+        - name: http
+          containerPort: 80
+        resources:    
+            requests:               
+                memory: "32M"
+                cpu: "0.1"
+            limits:
+                memory: "320M"
+                cpu: "0.3"
