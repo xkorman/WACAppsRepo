@@ -7,6 +7,7 @@ resources:
   - ../../mf-ambulance
   - ../../md_ambulance
   - ../../mar-ku-ambulance
+  - ../../jm-lm-ambulance
   - ../../xholubov_ambulance
   - ../../adp-team
   - ../../ij-ambulance
