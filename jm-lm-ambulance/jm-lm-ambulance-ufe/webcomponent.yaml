@@ -9,7 +9,7 @@ spec:
   navigation:
     - element: jm-lm-ambulance-wl-app
       path: jm-lm-ambulance-wl            
-      title: Zoznam čakajúcich 
+      title: Zoznam čakajúcich xmarincic
       details: Spravuje zoznam pacientov čakajúcich na vyšetrenie v ambulancii     
       attributes:                   
         - name: base-path
