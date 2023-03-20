@@ -7,7 +7,7 @@ spec:
   navigation:
     - element: samrer-ambulance-wl-app
       path: samrer-ambulance-wl            
-      title: Zoznam čakajúcich 
+      title: Zoznam čakajúcich SamRer
       details: Spravuje zoznam pacientov čakajúcich na vyšetrenie v ambulancii     
       attributes:                   
         - name: base-path

@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: pp-ambulance-ufe-deployment
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
         pod: pp-ambulance-ufe-label
