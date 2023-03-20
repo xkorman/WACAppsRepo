@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: pablo-ambulance-webapi
 spec:
-  replicas: 2
+  replicas: 1
   selector:
       matchLabels:
         pod: pablo-ambulance-webapi-label

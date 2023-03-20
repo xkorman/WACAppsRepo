@@ -3,7 +3,7 @@
 Applikácie v tomto repozitári sa automaticky nasadia do AKS klastra a mali by byť prístupné na adrese:
 https://wac-2023.germanywestcentral.cloudapp.azure.com/ui/
 
-- Každý študent by mal mat RW práva na tento repozitár.
+> **Nemeňte adresáre, ktoré nie sú vaše a ich obsah !!!**
 
 - Aplikácia by sa mala skladať z dvoch častí: Webcomponent a Webapi. Davajte ich do oddelenych podadresarov.
 
@@ -13,21 +13,19 @@ https://wac-2023.germanywestcentral.cloudapp.azure.com/ui/
 
 - Každý commit by mal byť schválený "maintainerom", čiže jedným z cvičiacich.
 
-> **Nemeňte adresáre, ktoré nie sú vaše a ich obsah !!!**
-
 ## Pridanie aplikácie 
 
-1. Ak nemáte, vyžiadajte si prístup na `Apps-repo` u cvičiaceho.
+1. Repozitár je public ale právo priamo komitovať majú iba cvičiaci. Vytvorte si fork a po zmenách vytvoríte pull request. Pull requesty budú schvalovať cvičiaci.
 
-2. Vytvorte adresár v root priestore s názvom vašej aplikácie. Štruktúra podadresárov v ňom nie je predpísaná, odporúča sa mať podadresár na webkomponent a druhý na webapi.
+2. Vytvorte adresár v root priestore s názvom vašej aplikácie. Názov priečinka musí byť unikátny odporúčame preto pridať používaný prefix (napr. `<pfx>-ambulance`). Štruktúra podadresárov v ňom nie je predpísaná, odporúča sa mať podadresár na webkomponent a druhý na webapi. V repozitári je jeden ukážkový adresár `_msevcik_demo`. Prosím nepoužívajte špecialne znaky na začiatku názvu priečinka z organizačných dôvodov chceme mať niektoré vyditelné na vrchu preto tieto začínajú na _.
 
 3. V hlavnom adresári vašej aplikácie musí byť súbor kustomization.yaml referencujúci vaše komponenty.
 
-4. Do súboru `\clusters\prod\kustomization.yaml` pridajte odkaz na adresár s vašou aplikáciou.
+4. Do súboru `\_clusters\prod\kustomization.yaml` pridajte odkaz na adresár s vašou aplikáciou.
 
-5. Spravte komit.
+5. Spravte komit do svojho forku a následne vytvorte pull/merge request. Váš cvičiaci pull request skontroluje a schváli.
 
-   Po komite Flux automaticky nasadí komponenty do AKS. Overte to po pár minútach na stránke aplikácie, i.e. https://wac-2023.germanywestcentral.cloudapp.azure.com/ui/. 
+   Po dokončení pull requestu Flux automaticky nasadí komponenty do AKS. Overte to po pár minútach na stránke aplikácie, i.e. [https://wac-2023.germanywestcentral.cloudapp.azure.com/ui](https://wac-2023.germanywestcentral.cloudapp.azure.com/ui).
 
 ### Aktualizácia verzie docker obrazu
 
