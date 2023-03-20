@@ -3,7 +3,7 @@ kind: Kustomization
 
 resources:
   - ../../_msevcik_demo
-  - ../../pc_ambulance
+#  - ../../pc_ambulance
   - ../../mar-ku-ambulance
 
 namespace: wac-hospital
