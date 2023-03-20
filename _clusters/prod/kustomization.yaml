@@ -4,7 +4,21 @@ kind: Kustomization
 resources:
   - ../../_msevcik_demo
   - ../../pc_ambulance
+#  - ../../pablo_ambulance
+  - ../../mf-ambulance
+  - ../../peter-plevko
   - ../../md_ambulance
   - ../../mar-ku-ambulance
+  - ../../jm-lm-ambulance
+  - ../../xholubov_ambulance
+  - ../../jb_ambulance
+  - ../../hoka-ambulance
+  - ../../adp-team
+  - ../../jj-ambulance
+  - ../../m-nem-ambulance
+#  - ../../janec-ambulance  
+  - ../../ij-ambulance
+  - ../../pirky
+#  - ../../ll-ambulance
 
 namespace: wac-hospital

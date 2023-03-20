@@ -1,0 +1,27 @@
+apiVersion: fe.milung.eu/v1
+kind: WebComponent
+metadata:
+  name: adp-pharmas-ufe
+spec:
+  module-uri:
+    http://adp-pharmas-ufe.wac-hospital/build/adp-pharmas.esm.js
+    # module web komponentu pre tento mikroFE
+    # - umiestnený v namespace wac-hospital
+  navigation:
+    - element:
+        adp-app # element, ktorý bude vložený na stránku
+        # pri navigácii na zoznam čakajúcich
+      path: adp-pharmas # cesta, ktora sa zobrazi v address bare v prehliadaci, ked bude tento mikroFE aktívny
+      title: Projekt adp # názov mikro aplikácie
+      details: Hello world adp app
+      attributes:
+        - name: base-path
+          value: /ui/adp-pharmas/
+  preload: false # určuje, či má byť web komponent načítaný spolu s hlavnou stránkou
+  proxy:
+    true # pre komponenty v rámci klastra, neprístupné na verejnej sieti
+    # musí byť táto hodnota nastavená na true
+  hash-suffix:
+    v1alpha2 # voliteľný suffix pre načítanie modulu web komponentu - jeho zmenou
+    # sa mení názov URL pre modul a tým je možné predísť problémom
+    # s verziami vo vyrovnávacích pamätiach

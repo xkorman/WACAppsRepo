@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: pc-ambulance-ufe-deployment      # meno deployment-u od ktorého sa odvádza meno podu
+  name: jm-lm-ambulance-ufe-deployment      # meno deployment-u od ktorého sa odvádza meno podu
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
-      pod: pc-ambulance-ufe-label    # tento riadok je len označenie štítku 
+        pod: jm-lm-ambulance-ufe-label    # tento riadok je len označenie štítku 
                                     # key-value pair pod=ambualnce ufe
                                     # určený pre výber podov s rovnakým štítkom
   template:                    # šablóna pre vytvorenie replík podov
     metadata:
       labels: 
-        pod: pc-ambulance-ufe-label    # štítky podu
+        pod: jm-lm-ambulance-ufe-label    # štítky podu
     spec:
       containers:
-      - name: pc-ambulance-ufe-container # meno kontaineru - v pod-e ich môže byť viac
-        image: cagardap/ambulance-ufe:1.0.0-11
+      - name: jm-lm-ambulance-ufe-container # meno kontaineru - v pod-e ich môže byť viac
+        image: thejakey/ambulance-ufe
         imagePullPolicy: Always
         ports:
         - name: http
