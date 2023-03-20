@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: pc-ambulance-ufe-container # meno kontaineru - v pod-e ich môže byť viac
-        image: cagardap/ambulance-ufe
+        image: cagardap/ambulance-ufe:1.0.0-11
         imagePullPolicy: Always
         ports:
         - name: http
