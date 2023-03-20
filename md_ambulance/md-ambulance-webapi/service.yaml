@@ -1,0 +1,13 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: md-ambulance-webapi
+spec:
+  type: ClusterIP
+  selector:
+    pod: md-ambulance-webapi-label
+  ports:
+    - name: webapi-s-port
+      protocol: TCP
+      port: 80
+      targetPort: 8080
