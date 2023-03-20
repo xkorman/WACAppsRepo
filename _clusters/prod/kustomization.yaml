@@ -3,7 +3,6 @@ kind: Kustomization
 
 resources:
   - ../../_msevcik_demo
-  - ../../pc_ambulance
 #  - ../../pablo_ambulance
   - ../../mf-ambulance
   - ../../peter-plevko
