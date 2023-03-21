@@ -10,7 +10,7 @@ resources:
   - ../../hoka-ambulance
   - ../../ij-ambulance
 #  - ../../janec-ambulance
-#  - ../../jb_ambulance
+  - ../../jb_ambulance
   - ../../jj-ambulance
   - ../../jm-lm-ambulance
 #  - ../../ll-ambulance
