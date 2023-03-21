@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: xvykopal-ambulance-ufe-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+        pod: xvykopal-ambulance-ufe-label
+  template:
+    metadata:
+      labels: 
+        pod: xvykopal-ambulance-ufe-label
+    spec:
+      containers:
+      - name: xvykopal-ambulance-ufe-container
+        image: xvykopal/ambulance-ufe
+        imagePullPolicy: Always
+        ports:
+        - name: http
+          containerPort: 80
+        resources:
+            requests:               
+                memory: "32M"
+                cpu: "0.1"
+            limits:
+                memory: "320M"
+                cpu: "0.3"
