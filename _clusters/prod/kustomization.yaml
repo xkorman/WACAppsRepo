@@ -20,6 +20,7 @@ resources:
   - ../../ij-ambulance
   - ../../pirky
 #  - ../../ll-ambulance
+  - ../../fchalas-ambulance
   - ../../mdurovic-ambulance
   - ../../xvykopal-ambulance
   - ../../stesch-ambulance
