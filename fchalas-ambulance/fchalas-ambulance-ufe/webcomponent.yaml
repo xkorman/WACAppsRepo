@@ -7,7 +7,7 @@ spec:
   navigation:
     - element: fchalas-ambulance-wl-app
       path: fchalas-ambulance-wl            
-      title: Zoznam čakajúcich 
+      title: Zoznam čakajúcich fchalas
       details: Spravuje zoznam pacientov čakajúcich na vyšetrenie v ambulancii     
       attributes:                   
         - name: base-path
