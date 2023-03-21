@@ -3,6 +3,7 @@ kind: Kustomization
 
 resources:
   - ../../_msevcik_demo
+  - ../../fa-ambulance
 #  - ../../pablo_ambulance
   - ../../mf-ambulance
   - ../../peter-plevko
@@ -15,7 +16,7 @@ resources:
   - ../../adp-team
   - ../../jj-ambulance
   - ../../m-nem-ambulance
-#  - ../../janec-ambulance  
+#  - ../../janec-ambulance
   - ../../ij-ambulance
   - ../../pirky
 #  - ../../ll-ambulance
