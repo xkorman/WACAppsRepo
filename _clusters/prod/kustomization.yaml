@@ -20,6 +20,7 @@ resources:
   - ../../ij-ambulance
   - ../../pirky
 #  - ../../ll-ambulance
+  - ../../ab-ambulance
   - ../../mjankuliak-ambulance
   - ../../mkrchnavy-ambulance
   - ../../mkukucka-ambulance
