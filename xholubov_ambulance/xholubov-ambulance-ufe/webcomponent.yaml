@@ -11,7 +11,7 @@ spec:
       details: Spravuje zoznam pacientov čakajúcich na vyšetrenie v ambulancii
       attributes:
         - name: base-path
-          value: /xholubov-ambulance-wl/
+          value: /ui/xholubov-ambulance-wl/
         - name: ambulance
           value: bobulova
   preload: false
