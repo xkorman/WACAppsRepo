@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment # Automaticky vytvori replicaSet (zdedene)
+metadata:
+  name: stesch-ambulance-list-deployment      # meno deployment-u od ktorého sa odvádza meno podu
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+        pod: stesch-ambulance-list-label    # tento riadok je len označenie štítku 
+                                    # key-value pair pod=ambualnce list
+                                    # určený pre výber podov s rovnakým štítkom
+  template:                    # šablóna pre vytvorenie replík podov
+    metadata:
+      labels: 
+        pod: stesch-ambulance-list-label    # štítky podu
+    spec:
+      containers:
+      - name: stesch-ambulance-list-container # meno kontaineru - v pod-e ich môže byť viac
+        image: stefanschindler/ambulance-list # Default hlada na hub.docker.com
+        imagePullPolicy: Always
+        ports:
+        - name: http
+          containerPort: 80
+        resources:                  # určenie kvót pre využívané fyzické prostriedky
+                                    # je dôležité pre riadenie záťaže v rámci kubernetes
+                                    # klastra
+            requests:               
+                memory: "32M"
+                cpu: "0.1"
+            limits:
+                memory: "320M"
+                cpu: "0.3"

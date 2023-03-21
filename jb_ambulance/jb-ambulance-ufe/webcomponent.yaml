@@ -13,6 +13,8 @@ spec:
       title: Zoznam čakajúcich JB   # názov mikro aplikácie
       details: Spravuje zoznam pacientov čakajúcich na vyšetrenie v ambulancii
       attributes:
+        - name: base-path
+          value: /ui/jb-ambulance-wl/
         - name: ambulance
           value: bobulova
 

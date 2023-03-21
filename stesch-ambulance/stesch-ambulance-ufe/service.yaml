@@ -1,0 +1,13 @@
+kind: Service
+apiVersion: v1 # translates to core/v1 (core is default namespaces)
+metadata:
+  name: stesch-ambulance-list   #  určuje aj záznam DNS v rámci virtuálne siete klastra
+spec:  
+  selector:
+    pod: stesch-ambulance-list-label     # zhoduje sa s metadata.labels šablóny pod-u
+  ports:
+  - name: http
+    protocol: TCP
+    port: 80            # port pomenovanej služby, môže sa líšiť 
+                        # od portu na ktorom počúva kontajner
+    targetPort: http    # viď meno portu v deployment.yaml
