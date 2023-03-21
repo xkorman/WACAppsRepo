@@ -6,4 +6,4 @@ resources:                  # zoznam manifestov - zdrojov,
   - ./jb-ambulance-ufe
 
 commonLabels:               # značky priradené všetkým zdrojom tejto aplikácie
-  app: jb-ambulance-ufe
+  app: jb-ambulance
