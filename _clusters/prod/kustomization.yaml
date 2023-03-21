@@ -4,7 +4,7 @@ kind: Kustomization
 resources:
   - ../../_msevcik_demo
   - ../../fa-ambulance
-#  - ../../pablo_ambulance
+  - ../../pablo_ambulance
   - ../../mf-ambulance
   - ../../peter-plevko
   - ../../md_ambulance

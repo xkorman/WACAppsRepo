@@ -7,7 +7,7 @@ spec:
   navigation:
     - element: mdurovic-ambulance-wl-app
       path: mdurovic-ambulance-wl
-      title: Zoznam čakajúcich
+      title: Zoznam čakajúcich mdurovic
       details: Spravuje zoznam pacientov čakajúcich na vyšetrenie v ambulancii
       attributes:
         - name: base-path
