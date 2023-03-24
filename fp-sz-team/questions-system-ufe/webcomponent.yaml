@@ -3,7 +3,7 @@ kind: WebComponent
 metadata: 
   name: zhan-chalas-questions-system
 spec:   
-  module-uri: http://zhan-chalas-questions-system.questions-system/build/zhan-chalas-projekt.esm.js
+  module-uri: http://zhan-chalas-questions-system.wac-hospital/build/zhan-chalas-projekt.esm.js
                      # module web komponentu pre tento mikroFE 
                      # - umiestnený v namespace wac-hospital
   navigation:
