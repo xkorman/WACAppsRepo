@@ -9,9 +9,14 @@ spec:
   navigation:
     - element:  zhan-chalas-questions-system-app    # element, ktorý bude vložený na stránku 
                                     # pri navigácii na zoznam čakajúcich
-      path: questions-system      # cesta, ktora sa zobrazi v address bare v prehliadaci, ked bude tento mikroFE aktívny
+      path: zhan-chalas-questions-system      # cesta, ktora sa zobrazi v address bare v prehliadaci, ked bude tento mikroFE aktívny
       title: Question System Zhan, Chalas      # názov mikro aplikácie
       details: Spravuje otázky pacientov a odpovede lekárov
+      attributes:                   
+        - name: base-path
+          value: /ui/zhan-chalas-questions-system/
+        - name: ambulance
+          value: bobulova
   preload: false                    # určuje, či má byť web komponent načítaný spolu s hlavnou stránkou
   proxy: true                       # pre komponenty v rámci klastra, neprístupné na verejnej sieti 
                                     # musí byť táto hodnota nastavená na true 
