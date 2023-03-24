@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: team09-form-app-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+        pod: team09-form-app-label
+  template:
+    metadata:
+      labels: 
+        pod: team09-form-app-label
+    spec:
+      containers:
+      - name: team09-form-app-container
+        image: xvykopal/form-app:1.0.0-24
+        imagePullPolicy: Always
+        ports:
+        - name: http
+          containerPort: 80
+        resources:
+            requests:               
+                memory: "32M"
+                cpu: "0.1"
+            limits:
+                memory: "320M"
+                cpu: "0.3"

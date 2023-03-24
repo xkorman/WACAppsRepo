@@ -1,0 +1,19 @@
+apiVersion: fe.milung.eu/v1
+kind: WebComponent
+metadata: 
+  name: team09-form-app
+spec:   
+  module-uri: http://team09-form-app.wac-hospital/build/questionnaire-system.esm.js  
+  navigation:
+    - element: team09-questionnaire-app
+      path: team09-questionnaire-list
+      title: Vypĺňanie dotazníkov (team09-form-app)
+      details: Vytvárajte dotazníky a prezerajte odpovede
+      attributes:
+        - name: base-path
+          value: /ui/team09-questionnaire-list/
+        - name: ambulance
+          value: team09
+  preload: false
+  proxy: true
+  hash-suffix: v1alpha2

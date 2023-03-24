@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: team09-form-app
+spec:  
+  selector:
+    pod: team09-form-app-label
+  ports:
+  - name: http
+    protocol: TCP
+    port: 80
+    targetPort: http
