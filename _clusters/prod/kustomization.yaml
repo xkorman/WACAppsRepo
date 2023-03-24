@@ -8,6 +8,7 @@ resources:
   - ../../af-ambulance
   - ../../fa-ambulance
   - ../../fchalas-ambulance
+  - ../../hhh-team
   - ../../hoka-ambulance
   - ../../ij-ambulance
 #  - ../../janec-ambulance
@@ -34,5 +35,5 @@ resources:
   - ../../vf_ambulance
   - ../../xholubov_ambulance
   - ../../xvykopal-ambulance
-  
+
 namespace: wac-hospital
