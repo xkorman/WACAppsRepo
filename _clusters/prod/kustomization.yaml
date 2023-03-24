@@ -8,6 +8,7 @@ resources:
   - ../../adp-team
   - ../../af-ambulance
   - ../../bado-ambulance
+  - ../../db_ambulance
   - ../../fa-ambulance
   - ../../fchalas-ambulance
   - ../../fp-sz-team
