@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tl-team-ufe-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+        pod: tl-team-ufe-deployment
+  template:
+    metadata:
+      labels: 
+        pod: tl-team-ufe-deployment
+    spec:
+      containers:
+      - name: tl-team-ufe-container
+        image: timolabsky/ambulance-ufe:0.0.1-26
+        imagePullPolicy: Always
+        ports:
+        - name: http
+          containerPort: 80
+        resources:                   
+            requests:               
+                memory: "32M"
+                cpu: "0.1"
+            limits:
+                memory: "320M"
+                cpu: "0.3"

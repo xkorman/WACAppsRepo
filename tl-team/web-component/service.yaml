@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: tl-team-ufe
+spec:  
+  selector:
+    pod: tl-team-ufe-label
+  ports:
+  - name: http
+    protocol: TCP
+    port: 80
+    targetPort: http
