@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hhh-team-ufe-deployment2      # meno deployment-u od ktorého sa odvádza meno podu
+  name: hhh-team-ufe-deployment      # meno deployment-u od ktorého sa odvádza meno podu
 spec:
   replicas: 1
   selector:
