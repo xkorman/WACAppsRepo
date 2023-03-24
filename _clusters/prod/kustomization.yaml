@@ -7,6 +7,7 @@ resources:
   - ../../ac-ambulance
   - ../../adp-team
   - ../../af-ambulance
+  - ../../bado-ambulance
   - ../../fa-ambulance
   - ../../fchalas-ambulance
   - ../../hhh-team
@@ -16,9 +17,9 @@ resources:
   - ../../jb_ambulance
   - ../../jj-ambulance
   - ../../jm-lm-ambulance
+  - ../../kali-team
 #  - ../../ll-ambulance
   - ../../m-nem-ambulance
-  - ../../kali-team
   - ../../mar-ku-ambulance
   - ../../mb-ambulance
   - ../../md_ambulance
