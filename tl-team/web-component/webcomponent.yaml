@@ -4,7 +4,7 @@ metadata:
   name: tl-team-ufe
 
 spec:   
-  module-uri: http://tl-ambulance-ufe.wac-hospital/build/ambulance-list.esm.js
+  module-uri: http://tl-team-ufe.wac-hospital/build/ambulance-list.esm.js
   navigation:
     - element: tl-ambulance-wl-app
       path: tl-ambulance-wl
