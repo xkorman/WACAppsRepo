@@ -14,7 +14,7 @@ resources:
   - ../../hhh-team
   - ../../hoka-ambulance
   - ../../ij-ambulance
-#  - ../../janec-ambulance
+  - ../../janec-ambulance
   - ../../jb_ambulance
   - ../../jj-ambulance
   - ../../jm-lm-ambulance
