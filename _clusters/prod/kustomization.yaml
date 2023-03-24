@@ -18,6 +18,7 @@ resources:
   - ../../jm-lm-ambulance
 #  - ../../ll-ambulance
   - ../../m-nem-ambulance
+  - ../../kali-team
   - ../../mar-ku-ambulance
   - ../../mb-ambulance
   - ../../md_ambulance
