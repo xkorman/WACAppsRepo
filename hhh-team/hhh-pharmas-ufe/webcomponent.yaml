@@ -5,7 +5,7 @@ metadata:
 spec:
   module-uri: http://hhh-team-ufe.wac-hospital/build/wac-team25.esm.js
   navigation:
-    - element: hhh-team-app
+    - element: hhh-app
       path: hhh-team
       title: HHH Team project
       details: Semesteral project of team HHH

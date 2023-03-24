@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: hhh-team-ufe-container # meno kontaineru - v pod-e ich môže byť viac
-          image: holubov/wac-team25:1.0.0-18
+          image: holubov/wac-team25:1.0.0-19
           imagePullPolicy: Always
           ports:
             - name: http
