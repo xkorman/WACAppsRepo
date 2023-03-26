@@ -23,6 +23,7 @@ resources:
   - ../../jb_ambulance
   - ../../jj-ambulance
   - ../../jm-lm-ambulance
+  - ../../jv-team
   - ../../kali-team
   - ../../ll-ambulance
   - ../../m-nem-ambulance
