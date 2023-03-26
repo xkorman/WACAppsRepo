@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tech-podolae-ambulance-ufe-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      pod: tech-podolae-ambulance-ufe-label
+  template:
+    metadata:
+      labels:
+        pod: tech-podolae-ambulance-ufe-label
+    spec:
+      containers:
+        - name: tech-podolae-ambulance-ufe-container
+          image: silentstorm1406/ambulance-ufe
+          imagePullPolicy: Always
+          ports:
+            - name: http
+              containerPort: 80
+          resources:
+            requests:
+              memory: "32M"
+              cpu: "0.1"
+            limits:
+              memory: "320M"
+              cpu: "0.3"
