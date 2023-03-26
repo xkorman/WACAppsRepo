@@ -1,0 +1,19 @@
+apiVersion: fe.milung.eu/v1
+kind: WebComponent
+metadata:
+  name: mf-e-recipes-fe
+spec:
+  module-uri: http://mf-e-recipes-fe.wac-hospital/build/e-recipes.esm.js
+  navigation:
+    - element: mf-recipes-app
+      path: mf-recipes-app
+      title: Projekt xfranczel
+      details: Aplikácia na správu požiadaviek na vydanie e-receptov od pacientov svojim doktorom
+      attributes:
+        - name: base-path
+          value: /ui/mf-recipes-app/
+        - name: userId
+          value: jh
+  preload: false
+  proxy: true
+  hash-suffix: v1alpha1
