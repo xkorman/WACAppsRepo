@@ -1,0 +1,20 @@
+apiVersion: fe.milung.eu/v1
+kind: WebComponent
+metadata: 
+  name: mimast-property-manager
+spec:   
+  module-uri: http://mimast-property-manager.wac-hospital/build/mimast-property-manager.esm.js  
+                     # module web komponentu pre tento mikroFE 
+                     # - umiestnený v namespace wac-hospital
+  navigation:
+    - element: mimast-component    # element, ktorý bude vložený na stránku 
+                                    # pri navigácii na zoznam čakajúcich
+      path: mimast-property-manager      # cesta, ktora sa zobrazi v address bare v prehliadaci, ked bude tento mikroFE aktívny
+      title: Tím Mimast      # názov mikro aplikácie
+      details: Marek Krchňavý Michal Ďurovič Štefan Schindler
+  preload: false                    # určuje, či má byť web komponent načítaný spolu s hlavnou stránkou
+  proxy: true                       # pre komponenty v rámci klastra, neprístupné na verejnej sieti 
+                                    # musí byť táto hodnota nastavená na true 
+  hash-suffix: v1alpha2             # voliteľný suffix pre načítanie modulu web komponentu - jeho zmenou 
+                                    # sa mení názov URL pre modul a tým je možné predísť problémom 
+                                    # s verziami vo vyrovnávacích pamätiach

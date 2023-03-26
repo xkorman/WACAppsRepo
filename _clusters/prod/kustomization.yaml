@@ -29,6 +29,7 @@ resources:
   - ../../md_ambulance
   - ../../mdurovic-ambulance
   - ../../mf-ambulance
+  - ../../mimast-team
   - ../../mjankuliak-ambulance
   - ../../mkrchnavy-ambulance
   - ../../mkukucka-ambulance
@@ -50,5 +51,5 @@ resources:
   - ../../xholubov_ambulance
   - ../../xvykopal-ambulance
   - ../../zy-ambulance
-
+  
 namespace: wac-hospital
