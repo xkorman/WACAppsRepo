@@ -11,8 +11,8 @@ spec:
       title: TL - Zoznam čakajúcich
       details: Spravuje zoznam pacientov čakajúcich na vyšetrenie v ambulancii
       attributes:
-        - name: api-uri
-          value: /ui/tl-waiting-list-api
+        - name: base-path
+          value: /ui/tl-ambulance-wl/
         - name: ambulance
           value: bobulova
   preload: false

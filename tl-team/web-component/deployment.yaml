@@ -6,11 +6,11 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-        pod: tl-team-ufe-deployment
+        pod: tl-team-ufe-label
   template:
     metadata:
       labels: 
-        pod: tl-team-ufe-deployment
+        pod: tl-team-ufe-label
     spec:
       containers:
       - name: tl-team-ufe-container
