@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: ij-jj-hospital-warehouse-app
+spec:  
+  selector:
+    pod: ij-jj-hospital-warehouse-app-label
+  ports:
+  - name: http
+    protocol: TCP
+    port: 80
+    targetPort: http
