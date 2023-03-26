@@ -55,7 +55,7 @@ resources:
   - ../../team09-form-app
   - ../../t13-ambulance
   - ../../tech-podolae-ambulance
-#  - ../../tl-team
+  - ../../tl-team
   - ../../vf_ambulance
   - ../../xglemba-project
   - ../../xholubov_ambulance
