@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bbm-project-ufe-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      pod: bbm-project-ufe-label
+  template:                    
+    metadata:
+      labels:
+        pod: bbm-project-ufe-label
+    spec:
+      containers:
+        - name: bbm-project-ufe-container
+          image: wacteambbm/wac-project-fe:1.0.1
+          imagePullPolicy: Always
+          ports:
+            - name: http
+              containerPort: 80
+          resources:
+            requests:
+              memory: "32M"
+              cpu: "0.1"
+            limits:
+              memory: "320M"
+              cpu: "0.3"
