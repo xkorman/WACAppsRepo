@@ -12,6 +12,7 @@ resources:
   - ../../bbm-team
   - ../../db_ambulance
   - ../../fa-ambulance
+  - ../../fa-projekt
   - ../../fchalas-ambulance
   - ../../fp-sz-team
   - ../../hhh-team

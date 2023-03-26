@@ -1,0 +1,21 @@
+apiVersion: fe.milung.eu/v1
+kind: WebComponent
+metadata:
+  name: fa-projekt
+spec:
+  module-uri: http://fa-projekt.wac-hospital/build/fa-projekt.esm.js
+  navigation:
+    - element: my-component
+      path: fa-projekt
+      title: fa-projekt
+      details: nic zaujimave
+      attributes:
+#        - name: api-uri
+#          value: /fa-ambulance-wl/
+        - name: base-path
+          value: /ui/fa-projekt/
+        - name: ambulance
+          value: bobulova`
+  preload: false
+  proxy: true
+  hash-suffix: v1alpha1
