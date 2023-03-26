@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: bbm-project-ufe-deployment
+  name: vaccinator-fe-deployment
 spec:
   replicas: 1
   selector:
     matchLabels:
-      pod: bbm-project-ufe-label
-  template:                    
+      pod: vaccinator-fe-label
+  template:
     metadata:
       labels:
-        pod: bbm-project-ufe-label
+        pod: vaccinator-fe-label
     spec:
       containers:
-        - name: bbm-project-ufe-container
+        - name: vaccinator-fe-ufe-container
           image: wacteambbm/wac-project-fe:1.0.1
           imagePullPolicy: Always
           ports:

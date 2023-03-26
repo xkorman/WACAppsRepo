@@ -8,4 +8,4 @@ resources:                  # zoznam manifestov - zdrojov,
   - webcomponent.yaml
 
 commonLabels:               # značky priradené všetkým zdrojom tejto aplikácie
-  app: bbm-project-ufe
+  app: vaccinator-fe
