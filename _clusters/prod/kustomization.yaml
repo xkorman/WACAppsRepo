@@ -22,6 +22,7 @@ resources:
   - ../../ij-jj-hospital-warehouse
   - ../../janec-ambulance
   - ../../jb_ambulance
+  - ../../jbl-project
   - ../../jj-ambulance
   - ../../jm-lm-ambulance
   - ../../jv-team
