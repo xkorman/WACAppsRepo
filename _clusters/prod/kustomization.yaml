@@ -41,11 +41,12 @@ resources:
   - ../../rericha_ambulance
   - ../../stesch-ambulance
   - ../../team09-form-app
+  - ../../t13-ambulance
   - ../../tl-team
   - ../../vf_ambulance
+  - ../../xglemba-project
   - ../../xholubov_ambulance
   - ../../xvykopal-ambulance
   - ../../zy-ambulance
-  - ../../xglemba-project
 
 namespace: wac-hospital
