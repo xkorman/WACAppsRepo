@@ -32,6 +32,7 @@ resources:
   - ../../mjankuliak-ambulance
   - ../../mkrchnavy-ambulance
   - ../../mkukucka-ambulance
+  - ../../mkukucka-covid19-testing-administration
   - ../../pablo-ambulance
   - ../../pc-ambulance
   - ../../xkollarovap-project

@@ -1,0 +1,17 @@
+apiVersion: fe.milung.eu/v1
+kind: WebComponent
+metadata: 
+  name: covid19-testing-administration-ufe
+spec:   
+  module-uri: http://covid19-testing-administration-ufe.wac-hospital/build/covid19-testing-administration.esm.js  
+  navigation:
+    - element: covid19-testing-administration-app
+      path: covid19-testing-administration
+      title:  Správa testovania na ochorenie COVID-19 - Mkukucka
+      details:  Správa testovania na ochorenie COVID-19.
+      attributes:
+        - name: base-path
+          value: /ui/covid19-testing-administration/
+  preload: false
+  proxy: true
+  hash-suffix: v1alpha2
