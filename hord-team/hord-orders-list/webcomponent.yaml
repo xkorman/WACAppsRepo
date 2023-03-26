@@ -1,0 +1,24 @@
+apiVersion: fe.milung.eu/v1
+kind: WebComponent
+metadata: 
+  name: hord-orders-list
+spec:   
+  module-uri: http://hord-orders-list.wac-hospital/build/ambulance-list.esm.js  
+                     # module web komponentu pre tento mikroFE 
+                     # - umiestnený v namespace wac-hospital
+  navigation:
+    - element: hord-orders-wl-app    # element, ktorý bude vložený na stránku 
+                                    # pri navigácii na zoznam čakajúcich
+      path: hord-orders-wl      # cesta, ktora sa zobrazi v address bare v prehliadaci, ked bude tento mikroFE aktívny
+      title: Zoznam objednávok hord      # názov mikro aplikácie
+      details: Spravuje zoznam objednávok na vyšetrenie
+      attributes:                   
+        - name: base-path
+          value: /ui/hord-orders-wl/
+        - name: ambulance
+  preload: false                    # určuje, či má byť web komponent načítaný spolu s hlavnou stránkou
+  proxy: true                       # pre komponenty v rámci klastra, neprístupné na verejnej sieti 
+                                    # musí byť táto hodnota nastavená na true 
+  hash-suffix: v1alpha1             # voliteľný suffix pre načítanie modulu web komponentu - jeho zmenou 
+                                    # sa mení názov URL pre modul a tým je možné predísť problémom 
+                                    # s verziami vo vyrovnávacích pamätiach
