@@ -1,5 +1,4 @@
 apiVersion: fe.milung.eu/v1
-apiVersion: fe.milung.eu/v1
 kind: WebComponent
 metadata: 
   name: hud-nem-erl-ufe
@@ -11,7 +10,7 @@ spec:
     - element: hud-nem-erl-app    # element, ktorý bude vložený na stránku 
                                     # pri navigácii na zoznam čakajúcich
       path: hud-nem-erl      # cesta, ktora sa zobrazi v address bare v prehliadaci, ked bude tento mikroFE aktívny
-      title: Zoznam E-receptov      # názov mikro aplikácie
+      title: Zoznam E-receptov (Hudanova, Nemcova)     # názov mikro aplikácie
       details: Spravuje zoznam E-receptov
   preload: false                    # určuje, či má byť web komponent načítaný spolu s hlavnou stránkou
   proxy: true                       # pre komponenty v rámci klastra, neprístupné na verejnej sieti 
