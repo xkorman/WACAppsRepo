@@ -12,6 +12,8 @@ spec:
       attributes:
         - name: base-path
           value: /ui/tech-podolae-ambulance-wl/
+        - name: ambulance
+          value: bobulova
   preload: false
   proxy: true
   hash-suffix: v1alpha1
