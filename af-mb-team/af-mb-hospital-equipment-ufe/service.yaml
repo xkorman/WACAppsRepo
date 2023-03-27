@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: hospital-equipment-ufe
+spec:
+  selector:
+    pod: hospital-equipment-ufe-label
+  ports:
+    - name: http
+      protocol: TCP
+      port: 80
+      targetPort: http

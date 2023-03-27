@@ -1,0 +1,19 @@
+apiVersion: fe.milung.eu/v1
+kind: WebComponent
+metadata:
+  name: hospital-equipment-ufe
+spec:
+  module-uri: http://hospital-equipment-ufe.wac-hospital/build/hospital-equipment-project.esm.js
+  navigation:
+    - element: af-mb-equipment-list
+      path: hospital-equipment-list
+      title: Zoznam nemocničného zariadenia (projekt Billichová, Frniaková)
+      details: Spravuje zoznam nemocničného zariadenia
+      attributes:
+        - name: base-path
+          value: /ui/hospital-equipment-list/
+        - name: ambulance
+          value: af-mb-team
+  preload: false
+  proxy: true
+  hash-suffix: v1alpha2

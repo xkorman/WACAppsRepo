@@ -7,6 +7,7 @@ resources:
   - ../../anbe-ambulance
   - ../../ac-ambulance
   - ../../adp-team
+  - ../../af-mb-team
   - ../../af-ambulance
   - ../../bado-ambulance
   - ../../bamat-ambulance
@@ -49,6 +50,7 @@ resources:
   - ../../pm-ambulance
   - ../../xkollarovap-project
   - ../../peter-plevko
+
   - ../../pirky
   - ../../pkollarova-ambulance
   - ../../pprerko-team
