@@ -4,6 +4,7 @@ kind: Kustomization
 resources:
   - ../../_msevcik_demo
   - ../../ab-ambulance
+  - ../../anbe-ambulance
   - ../../ac-ambulance
   - ../../adp-team
   - ../../af-ambulance

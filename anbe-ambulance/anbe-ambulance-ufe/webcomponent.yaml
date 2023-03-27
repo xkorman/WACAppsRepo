@@ -1,0 +1,19 @@
+apiVersion: fe.milung.eu/v1
+kind: WebComponent
+metadata:
+  name: anbe-ambulance-ufe
+spec:
+  module-uri: http://anbe-ambulance-ufe.wac-hospital/build/ambulance-list.esm.js
+  navigation:
+    - element: anbe-test-component
+      path: anbe-ambulance-wl
+      title: Recenzie
+      details: Zoznam recenzii
+      attributes:
+        - name: base-path
+          value: /ui/anbe-ambulance-wl/
+        - name: ambulance
+          value: bobulova
+  preload: false
+  proxy: true
+  hash-suffix: v1alpha2
