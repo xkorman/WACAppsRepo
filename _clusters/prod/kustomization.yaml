@@ -13,6 +13,7 @@ resources:
   - ../../bamat-ambulance
   - ../../bbm-team
   - ../../db_ambulance
+  - ../../dk_ambulance
   - ../../fa-ambulance
   - ../../fa-projekt
   - ../../fchalas-ambulance
