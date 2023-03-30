@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: tl-team-ufe-container
-        image: timolabsky/ambulance-ufe:0.0.1-26
+        image: timolabsky/wac-equipment-fe:0.0.1-31
         imagePullPolicy: Always
         ports:
         - name: http
