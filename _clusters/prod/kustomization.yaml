@@ -12,8 +12,7 @@ resources:
   - ../../bado-ambulance
   - ../../bamat-ambulance
   - ../../bbm-team
-  - ../../db_ambulance
-  - ../../dk_ambulance
+  - ../../dk-ambulance
   - ../../fa-ambulance
   - ../../fa-projekt
   - ../../fchalas-ambulance
@@ -67,5 +66,6 @@ resources:
   - ../../xholubov_ambulance
   - ../../xvykopal-ambulance
   - ../../zy-ambulance
+  - ../../xbartosj-ambulance
 
 namespace: wac-hospital
