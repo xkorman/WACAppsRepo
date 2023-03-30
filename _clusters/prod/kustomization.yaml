@@ -12,7 +12,6 @@ resources:
   - ../../bado-ambulance
   - ../../bamat-ambulance
   - ../../bbm-team
-  - ../../db_ambulance
   - ../../dk-ambulance
   - ../../fa-ambulance
   - ../../fa-projekt
@@ -29,6 +28,7 @@ resources:
   - ../../jb_ambulance
   - ../../jbl-project
   - ../../jj-ambulance
+  - ../../jk-team
   - ../../jm-lm-ambulance
   - ../../jv-team
   - ../../kali-team
