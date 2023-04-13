@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: jm-ambulance-ufe-deployment      # meno deployment-u od ktorého sa odvádza meno podu
+  name: xmuller-ambulance-ufe-deployment      # meno deployment-u od ktorého sa odvádza meno podu
 spec:
   replicas: 1
   selector:
     matchLabels:
-        pod: jm-ambulance-ufe-label    # tento riadok je len označenie štítku 
+        pod: xmuller-ambulance-ufe-label    # tento riadok je len označenie štítku 
                                     # key-value pair pod=ambualnce ufe
                                     # určený pre výber podov s rovnakým štítkom
   template:                    # šablóna pre vytvorenie replík podov
     metadata:
       labels: 
-        pod: jm-ambulance-ufe-label    # štítky podu
+        pod: xmuller-ambulance-ufe-label    # štítky podu
     spec:
       containers:
-      - name: jm-ambulance-ufe-container # meno kontaineru - v pod-e ich môže byť viac
-        image: xmuller/ambulance-ufe
+      - name: xmuller-ambulance-ufe-container # meno kontaineru - v pod-e ich môže byť viac
+        image: xmuller/wac-project-ufe
         imagePullPolicy: Always
         ports:
         - name: http

@@ -1,10 +1,10 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: jm-ambulance-ufe   #  určuje aj záznam DNS v rámci virtuálne siete klastra
+  name: xmuller-ambulance-ufe   #  určuje aj záznam DNS v rámci virtuálne siete klastra
 spec:  
   selector:
-    pod: jm-ambulance-ufe-label     # zhoduje sa s metadata.labels šablóny pod-u
+    pod: xmuller-ambulance-ufe-label     # zhoduje sa s metadata.labels šablóny pod-u
   ports:
   - name: http
     protocol: TCP
