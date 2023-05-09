@@ -1,7 +1,10 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
+
 resources:
-  - mdurovic-ambulance-ufe
-  - mdurovic-ambulance-webapi
+  - deployment.yaml
+  - service.yaml
+  - ingress.yaml
+
 commonLabels:
-  app: mdurovic-ambulance
+  app: mdurovic-ambulance-webapi

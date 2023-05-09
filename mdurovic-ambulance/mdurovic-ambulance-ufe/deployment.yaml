@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: mdurovic-ambulance-ufe-container
-          image: michaldurovic/ambulance-ufe
+          image: michaldurovic/ambulance-ufe:1.0.0-33
           imagePullPolicy: Always
           ports:
             - name: http
