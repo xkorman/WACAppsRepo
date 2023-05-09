@@ -16,7 +16,9 @@ spec:
         - name: base-path
           value: /ui/stesch-ambulance-wl/
         - name: ambulance
-          value: bobulova
+          value: bobulova        
+        - name: api-uri
+          value: /stesch-waiting-list-api
   preload: false                    # určuje, či má byť web komponent načítaný spolu s hlavnou stránkou
   proxy: true                       # pre komponenty v rámci klastra, neprístupné na verejnej sieti 
                                     # musí byť táto hodnota nastavená na true 

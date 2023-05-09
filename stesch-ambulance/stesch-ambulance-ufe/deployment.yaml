@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: stesch-ambulance-list-container # meno kontaineru - v pod-e ich môže byť viac
-        image: stefanschindler/ambulance-list # Default hlada na hub.docker.com
+        image: stefanschindler/ambulance-list:1.0.0-16 # Default hlada na hub.docker.com
         imagePullPolicy: Always
         ports:
         - name: http
