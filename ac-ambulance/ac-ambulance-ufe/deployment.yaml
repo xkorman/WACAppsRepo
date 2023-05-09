@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: ac-ambulance-ufe-container # meno kontaineru - v pod-e ich môže byť viac
-        image: jokkke/ambulance-ufe
+        image: jokkke/ambulance-ufe:1.0.0-20
         imagePullPolicy: Always
         ports:
         - name: http
