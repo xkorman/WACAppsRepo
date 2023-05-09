@@ -67,7 +67,7 @@ resources:
   - ../../xholubov_ambulance
   - ../../xvykopal-ambulance
   - ../../zy-ambulance
+
   - ../../xbartosj-ambulance
   - ../../xmuller-project
-
 namespace: wac-hospital
