@@ -1,7 +1,8 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-  - fchalas-ambulance-ufe
-  - fchalas-ambulance-webapi
+- deployment.yaml
+- service.yaml
+- ingress.yaml
 commonLabels:
-  app: fchalas-ambulance
+  app: fchalas-ambulance-webapi
