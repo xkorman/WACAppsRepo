@@ -1,7 +1,7 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-  - ./kali-project-ambulance-be
-  - ./kali-project-ambulance-fe
+- deployment.yaml
+- service.yaml
 commonLabels:
-  app: kali-app
+  app: kali-ambulance-webapi
