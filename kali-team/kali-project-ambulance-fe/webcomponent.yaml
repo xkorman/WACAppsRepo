@@ -11,7 +11,7 @@ spec:
       details: Pirky X Pablo X Dj Peter Pann
       attributes:
         - name: base-path
-          value: /kali-ambulance/
+          value: /ui/kali-ambulance/
         - name: ambulance
           value: bobulova
         - name: api-uri
