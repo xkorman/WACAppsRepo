@@ -16,7 +16,7 @@ spec:
       details: Adp app - pharmas
       attributes:
         - name: base-path
-          value: /adp-pharmas/
+          value: /ui/adp-pharmas/
         - name: api-uri
           value: /adp-pharmas-api
   preload: false # určuje, či má byť web komponent načítaný spolu s hlavnou stránkou
