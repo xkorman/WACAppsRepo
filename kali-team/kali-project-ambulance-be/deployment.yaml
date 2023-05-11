@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: kali-ambulance-webapi-container
-          image: pavol6999/backend:latest
+          image: pavol6999/backend:1.0.0-43
           imagePullPolicy: Always
           ports:
             - name: webapi-port
