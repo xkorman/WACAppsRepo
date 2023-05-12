@@ -3,7 +3,7 @@ kind: WebComponent
 metadata:
   name: hhh-pharmas-ufe
 spec:
-  module-uri: http://hhh-pharmas-ufe.hhh-pharmas/build/wac-team25.esm.js
+  module-uri: http://hhh-pharmas-ufe.wac-hospital/build/wac-team25.esm.js
   # module web komponentu pre tento mikroFE
   # - umiestnený v namespace wac-hospital
   navigation:

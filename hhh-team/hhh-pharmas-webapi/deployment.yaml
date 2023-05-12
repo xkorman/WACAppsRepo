@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: hhh-pharmas-webapi-container
-          image: holubov/hhh-pharmas-webapi:1.0.0-43
+          image: holubov/hhh-pharmas-webapi:1.0.0-53
           imagePullPolicy: Always
           ports:
             - name: webapi-port
