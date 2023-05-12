@@ -6,4 +6,3 @@ resources:
 - ingress.yaml
 commonLabels:
   app: kali-ambulance-webapi
-`
