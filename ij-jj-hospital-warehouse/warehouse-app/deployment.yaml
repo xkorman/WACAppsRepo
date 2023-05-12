@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: ij-jj-hospital-warehouse-app-container
-        image: ivanjatz/hospital-warehouse:1.0.0-23
+        image: ivanjatz/hospital-warehouse:1.0.0-54
         imagePullPolicy: Always
         ports:
         - name: http

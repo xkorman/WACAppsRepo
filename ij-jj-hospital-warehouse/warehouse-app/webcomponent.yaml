@@ -5,13 +5,15 @@ metadata:
 spec:   
   module-uri: http://ij-jj-hospital-warehouse-app.wac-hospital/build/hospital-warehouse.esm.js  
   navigation:
-    - element: warehouse-main
+    - element: hospital-main
       path: ij-jj-hospital-warehouse-resource-list
       title: Zoznam dostupných zdravotníckych pomôcok
       details: Projekt Ivan Jatz a Jozef Juraško
       attributes:
         - name: base-path
           value: /ui/ij-jj-hospital-warehouse-resource-list/
+        - name: api-uri
+          value: /ij-jj-hospital-warehouse-api
   preload: false
   proxy: true
   hash-suffix: v1alpha2
