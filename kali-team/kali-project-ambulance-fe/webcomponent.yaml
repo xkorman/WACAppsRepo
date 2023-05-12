@@ -5,13 +5,13 @@ metadata:
 spec:
   module-uri: http://kali-project-ambulance.wac-hospital/build/medimanage.esm.js
   navigation:
-    - element: kali-app
-      path: kali-ambulance
+    - element: router-app
+      path: ambulance-kali
       title: Projekt Kali Ambulance # názov mikro aplikácie
       details: Pirky X Pablo X Dj Peter Pann
       attributes:
         - name: base-path
-          value: /ui/kali-ambulance/
+          value: /ui/ambulance-kali/
         - name: ambulance
           value: bobulova
         - name: api-uri
