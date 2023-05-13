@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: hord-orders-list-container # meno kontaineru - v pod-e ich môže byť viac
-        image: mholym/orders-list:1.0.0-13
+        image: mholym/orders-list:1.0.0-31
         imagePullPolicy: Always
         ports:
         - name: http

@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: hoka-ambulance-ufe-container # meno kontaineru - v pod-e ich môže byť viac
-        image: mholym/ambulance-ufe
+        image: mholym/ambulance-ufe:1.0.0-16
         imagePullPolicy: Always
         ports:
         - name: http
