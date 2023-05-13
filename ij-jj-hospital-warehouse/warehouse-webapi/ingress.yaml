@@ -10,7 +10,7 @@ spec:
   rules:
     - http:
         paths:
-          - path: /ij-jj-hospital-warehouse-api(/|$)(.*)
+          - path: /ij-jj-hospital-warehouse-webapi/api(/|$)(.*)
             pathType: Prefix
             backend:
               service:
