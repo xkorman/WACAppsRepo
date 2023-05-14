@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: adp-pharmas-container # meno kontaineru - v pod-e ich môže byť viac
-          image: matejdelincak/adp-pharmas-ufe:1.0.0-40
+          image: matejdelincak/adp-pharmas-ufe:1.0.0-48
           imagePullPolicy: Always
           ports:
             - name: http
