@@ -14,7 +14,7 @@ spec:
       spec:
         containers:
         - name: ij-jj-hospital-warehouse-webapi-container
-          image: ivanjatz/hospital-warehouse-webapi:1.0.0-57
+          image: ivanjatz/hospital-warehouse-webapi:1.0.0-65
           imagePullPolicy: Always
           ports:
           - name: webapi-port
