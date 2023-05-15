@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: hhh-pharmas-ufe-container
-          image: holubov/hhh-pharmas-ufe:1.0.0-56
+          image: holubov/hhh-pharmas-ufe:1.0.0-58
           imagePullPolicy: Always
           ports:
             - name: http
