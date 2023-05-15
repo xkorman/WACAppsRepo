@@ -14,6 +14,8 @@ spec:
           value: /ui/team09-questionnaire-list/
         - name: ambulance
           value: team09
+        - name: api-uri
+          value: /team09-api
   preload: false
   proxy: true
   hash-suffix: v1alpha2
