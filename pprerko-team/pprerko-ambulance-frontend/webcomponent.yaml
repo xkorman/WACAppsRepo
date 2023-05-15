@@ -6,7 +6,7 @@ spec:
   module-uri: http://pprerko-ambulance-frontend.wac-hospital/build/ambulance-list.esm.js
   navigation:
     - element: pprerko-home-page
-      path: pprerko-ambulance            
+      path: pprerko-ambulance-frontend            
       title: Projekt pprerko
       details: Spravuje zoznam pacientov čakajúcich na vyšetrenie v ambulancii     
       attributes:                   

@@ -4,4 +4,4 @@ resources:
   - ./pprerko-ambulance-frontend
   - ./pprerko-ambulance-backend
 commonLabels:
-  app: pprerko-ambulance
+  app: pprerko-ambulance-frontend
