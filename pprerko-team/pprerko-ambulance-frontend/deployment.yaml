@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: pprerko-ambulance-ufe-deployment      # meno deployment-u od ktorého sa odvádza meno podu
+  name: pprerko-ambulance-frontend-deployment      # meno deployment-u od ktorého sa odvádza meno podu
 spec:
   replicas: 1
   selector:
     matchLabels:
-        pod: pprerko-ambulance-ufe-label    # tento riadok je len označenie štítku 
+        pod: pprerko-ambulance-frontend-label    # tento riadok je len označenie štítku 
                                     # key-value pair pod=ambualnce ufe
                                     # určený pre výber podov s rovnakým štítkom
   template:                    # šablóna pre vytvorenie replík podov
     metadata:
       labels: 
-        pod: pprerko-ambulance-ufe-label    # štítky podu
+        pod: pprerko-ambulance-frontend-label    # štítky podu
     spec:
       containers:
-      - name: pprerko-ambulance-ufe-container # meno kontaineru - v pod-e ich môže byť viac
+      - name: pprerko-ambulance-frontend-container # meno kontaineru - v pod-e ich môže byť viac
         image: xrericha/projekt-ufe
         imagePullPolicy: Always
         ports:
