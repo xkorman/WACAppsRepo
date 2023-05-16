@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: hospital-equipment-ufe-container
-          image: martinabillich/wac-hospital-equipment
+          image: martinabillich/wac-hospital-equipment:1.0.0-113
           imagePullPolicy: Always
           ports:
             - name: http
