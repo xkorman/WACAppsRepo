@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: t13-ambulance-t13-container # meno kontaineru - v pod-e ich môže byť viac
-        image: laderit/ambulance-t13
+        image: laderit/ambulance-t13:1.0.0-89
         imagePullPolicy: Always
         ports:
         - name: http
