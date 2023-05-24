@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: covid19-testing-administration-webapi
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /api/$2
+    nginx.ingress.kubernetes.io/use-regex: "true"
+spec:
+  ingressClassName: wac-hospital
+  rules:
+  - http:
+      paths:
+      - path: /covid-list-api(/|$)(.*)
+        pathType: Prefix
+        backend:
+          service:
+            name: covid19-testing-administration-webapi
+            port:
+              name: webapi-s-port

@@ -7,11 +7,15 @@ spec:
   navigation:
     - element: covid19-testing-administration-app
       path: covid19-testing-administration
-      title:  Správa testovania na ochorenie COVID-19 - Mkukucka
-      details:  Správa testovania na ochorenie COVID-19.
+      title:  Sprava testovania na ochorenie COVID-19 - Mkukucka
+      details:  Sprava testovania na ochorenie COVID-19
       attributes:
         - name: base-path
-          value: /ui/covid19-testing-administration/
+          value: /covid19-testing-administration/
+        - name: api-uri
+          value: /covid-list-api
+        - name: mobile-testing-place
+          value: spitalska
   preload: false
   proxy: true
   hash-suffix: v1alpha2
