@@ -10,8 +10,8 @@ spec:
     - element: t13-ambulance-app    # element, ktorý bude vložený na stránku
                                     # pri navigácii na zoznam čakajúcich
       path: t13-ambulance      # cesta, ktora sa zobrazi v address bare v prehliadaci, ked bude tento mikroFE aktívny
-      title: Sprava liekov (T13)      # názov mikro aplikácie
-      details: Sprava liekov v ambulancii, ich vydavanie pacientom a objednavanie v lekarni.
+      title: Správa liekov (T13)      # názov mikro aplikácie
+      details: Správa liekov v ambulancii, ich vydávanie pacientom a objednávanie v lekárni.
       attributes:                   
         - name: base-path
           value: /ui/t13-ambulance/
