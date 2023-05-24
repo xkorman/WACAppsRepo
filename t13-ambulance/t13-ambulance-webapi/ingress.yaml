@@ -9,11 +9,11 @@ spec:
   ingressClassName: wac-hospital
   rules:
   - http:
-    paths:
-    - path: /t13-ambulance-api(/|$)(.*)
-      pathType: Prefix
-      backend:
-        service:
-          name: t13-ambulance-webapi
-          port:
-            name: webapi-s-port
+      paths:
+      - path: /t13-ambulance-api(/|$)(.*)
+        pathType: Prefix
+        backend:
+          service:
+            name: t13-ambulance-webapi
+            port:
+              name: webapi-s-port
