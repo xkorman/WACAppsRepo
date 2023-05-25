@@ -5,7 +5,7 @@ metadata:
 spec:
   module-uri: http://anbe-ambulance-ufe.wac-hospital/build/ambulance-list.esm.js
   navigation:
-    - element: anbe-test-component
+    - element: anbe-ambulance-wl-app
       path: anbe-ambulance-wl
       title: Recenzie
       details: Zoznam recenzii
@@ -14,6 +14,8 @@ spec:
           value: /ui/anbe-ambulance-wl/
         - name: ambulance
           value: bobulova
+        - name: api-uri
+          value: /anbe-waiting-list-api
   preload: false
   proxy: true
   hash-suffix: v1alpha2
