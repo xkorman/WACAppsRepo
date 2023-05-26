@@ -15,6 +15,8 @@ spec:
       attributes:
         - name: base-path
           value: /ui/vaccinator-fe/
+        - name: api-uri
+          value: /vaccinator-be
 
   preload: false                    # určuje, či má byť web komponent načítaný spolu s hlavnou stránkou
   proxy: true                       # pre komponenty v rámci klastra, neprístupné na verejnej sieti

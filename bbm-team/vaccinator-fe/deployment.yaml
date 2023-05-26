@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: vaccinator-fe-ufe-container
-          image: wacteambbm/wac-project-fe:1.0.1
+          image: wacteambbm/wac-project-fe:1.0.62
           imagePullPolicy: Always
           ports:
             - name: http
