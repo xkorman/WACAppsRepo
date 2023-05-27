@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: zhan-chalas-webapi
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /api/$2
+    nginx.ingress.kubernetes.io/use-regex: "true"
+spec:
+  ingressClassName: questions-system
+  rules:
+  - http:
+      paths:
+      - path: /zhan-chalas-api(/|$)(.*)
+        pathType: Prefix
+        backend:
+          service:
+            name: zhan-chalas-webapi
+            port:
+              name: webapi-s-port
