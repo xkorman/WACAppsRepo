@@ -13,7 +13,7 @@ spec:
         - name: base-path
           value: /ui/mf-recipes-app/
         - name: api-uri
-          value: /mf-e-recipes-be/api
+          value: /mf-e-recipes-be
   preload: false
   proxy: true
   hash-suffix: v1alpha1
