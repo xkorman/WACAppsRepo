@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: zhan-chalas-questions-system-container # meno kontaineru - v pod-e ich môže byť viac
-        image: filipchalas/questions-system:1.0.0-50
+        image: filipchalas/questions-system:1.0.0-55
         imagePullPolicy: Always
         ports:
         - name: http
