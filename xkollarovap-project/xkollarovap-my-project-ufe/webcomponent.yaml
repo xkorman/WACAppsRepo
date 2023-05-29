@@ -9,11 +9,13 @@ spec:
       path: xkollarovap-doctor-schedule            
       title: Doktor termíny xkollarovap
       details: Spravuje termíny, kedy je dostupné vyšetrenie
-      attributes:                   
+      attributes:
         - name: base-path
           value: /ui/xkollarovap-doctor-schedule/
-        - name: ambulance
-          value: bobulova
+        - name: api-uri
+          value: /xkollarovap-doctor-schedule-list-api
+        - name: doctor-id
+          value: dr-abc
   preload: false                    
   proxy: true                                           
   hash-suffix: v1alpha2                        

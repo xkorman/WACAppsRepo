@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: xkollarovap-my-project-container # meno kontaineru - v pod-e ich môže byť viac
-        image: xkollarovap/my-project-ufe
+        image: xkollarovap/my-project-ufe:1.0.0-36
         imagePullPolicy: Always
         ports:
         - name: http
