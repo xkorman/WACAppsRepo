@@ -1,14 +1,13 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: mf-e-recipes-fe #  určuje aj záznam DNS v rámci virtuálne siete klastra
+  name: mf-e-recipes-fe
 spec:
   selector:
-    pod: mf-e-recipes-fe-label # zhoduje sa s metadata.labels šablóny pod-u
+    pod: mf-e-recipes-fe-label
   ports:
     - name: http
       protocol: TCP
       port:
-        80 # port pomenovanej služby, môže sa líšiť
-        # od portu na ktorom počúva kontajner
-      targetPort: http # viď meno portu v deployment.yaml
+        80
+      targetPort: http

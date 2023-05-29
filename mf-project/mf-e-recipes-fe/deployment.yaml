@@ -7,24 +7,20 @@ spec:
   selector:
     matchLabels:
       pod:
-        mf-e-recipes-fe-label # tento riadok je len označenie štítku
-        # key-value pair pod=ambualnce ufe
-        # určený pre výber podov s rovnakým štítkom
-  template: # šablóna pre vytvorenie replík podov
+        mf-e-recipes-fe-label
+  template: 
     metadata:
       labels:
-        pod: mf-e-recipes-fe-label # štítky podu
+        pod: mf-e-recipes-fe-label
     spec:
       containers:
-        - name: mf-e-recipes-fe-container # meno kontaineru - v pod-e ich môže byť viac
-          image: mfranczel/e-recipes-fe:1.0.0-19
+        - name: mf-e-recipes-fe-container
+          image: mfranczel/e-recipes-fe:1.0.0-36
           imagePullPolicy: Always
           ports:
             - name: http
               containerPort: 80
-          resources: # určenie kvót pre využívané fyzické prostriedky
-            # je dôležité pre riadenie záťaže v rámci kubernetes
-            # klastra
+          resources:
             requests:
               memory: "32M"
               cpu: "0.1"
