@@ -7,16 +7,18 @@ spec:
                      # module web komponentu pre tento mikroFE 
                      # - umiestnený v namespace wac-hospital
   navigation:
-    - element: t13-ambulance-wl-list    # element, ktorý bude vložený na stránku 
+    - element: t13-ambulance-app    # element, ktorý bude vložený na stránku
                                     # pri navigácii na zoznam čakajúcich
-      path: t13-ambulance-wl      # cesta, ktora sa zobrazi v address bare v prehliadaci, ked bude tento mikroFE aktívny
-      title: Zoznam čakajúcich t13      # názov mikro aplikácie
-      details: Spravuje zoznam pacientov čakajúcich na vyšetrenie v ambulancii
+      path: t13-ambulance      # cesta, ktora sa zobrazi v address bare v prehliadaci, ked bude tento mikroFE aktívny
+      title: Správa liekov (T13)      # názov mikro aplikácie
+      details: Správa liekov v ambulancii, ich vydávanie pacientom a objednávanie v lekárni.
       attributes:                   
         - name: base-path
-          value: /ui/t13-ambulance-wl/
+          value: /ui/t13-ambulance/
         - name: ambulance
-          value: bobulova
+          value: t13-ambulance
+        - name: api-uri
+          value: /t13-ambulance-api
   preload: false                    # určuje, či má byť web komponent načítaný spolu s hlavnou stránkou
   proxy: true                       # pre komponenty v rámci klastra, neprístupné na verejnej sieti 
                                     # musí byť táto hodnota nastavená na true 

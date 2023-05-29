@@ -4,6 +4,7 @@ kind: Kustomization
 resources:                  # zoznam manifestov - zdrojov,
   # ktoré sú súčasťou tejto aplikácie
   - ./vaccinator-fe
+  - ./vaccinator-be
 
 commonLabels:               # značky priradené všetkým zdrojom tejto aplikácie
   app: vaccinator-fe

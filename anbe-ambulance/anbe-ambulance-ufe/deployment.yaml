@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: anbe-ambulance-ufe-container # meno kontaineru - v pod-e ich môže byť viac
-          image: mryoda98/ambulance-ab
+          image: mryoda98/ambulance-ab:1.0.0-96
           imagePullPolicy: Always
           ports:
             - name: http

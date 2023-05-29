@@ -3,6 +3,7 @@ kind: Kustomization
 
 resources:
   - ./anbe-ambulance-ufe
+  - ./anbe-ambulance-webapi
 
 commonLabels:
   app: anbe-ambulance

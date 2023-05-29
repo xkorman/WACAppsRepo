@@ -1,0 +1,19 @@
+apiVersion: fe.milung.eu/v1
+kind: WebComponent
+metadata: 
+  name: xmuller-ambulance-ufe
+spec:   
+  module-uri: http://xmuller-ambulance-ufe.wac-hospital/build/xmuller-project.esm.js
+  navigation:
+    - element: xmuller-ambulance-wl-app
+      path: xmuller-ambulance-wl            
+      title: Správa obsadenosti nemocnice - xmuller
+      details: Spravuje obsadenost nemocnice     
+      attributes:                   
+        - name: base-path
+          value: /ui/xmuller-occupancy/
+        - name: ambulance
+          value: bobulova
+  preload: false                    
+  proxy: true                                           
+  hash-suffix: v1alpha2 

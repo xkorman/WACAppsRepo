@@ -12,8 +12,8 @@ spec:
       attributes:
         - name: base-path
           value: /ui/mf-recipes-app/
-        - name: userId
-          value: jh
+        - name: api-uri
+          value: /mf-e-recipes-be
   preload: false
   proxy: true
   hash-suffix: v1alpha1

@@ -1,0 +1,44 @@
+ apiVersion: apps/v1
+ kind: Deployment
+ metadata:
+   name: team09-webapi
+ spec:
+   replicas: 1
+   selector:
+       matchLabels:
+         pod: team09-webapi-label
+   template:
+       metadata:
+         labels:
+           pod: team09-webapi-label
+       spec:
+         containers:
+         - name: team09-webapi-container
+           image: xbartosj/webapi:1.0.0-47
+           imagePullPolicy: Always
+           ports:
+           - name: webapi-port
+             containerPort: 8080
+           resources:
+             requests:
+               memory: "32Mi"
+               cpu: "0.1"
+             limits:
+               memory: "128Mi"
+               cpu: "0.3"
+           env:
+            - name: MONGODB_URI
+              valueFrom:
+                configMapKeyRef:
+                  name: mongodb-configmap
+                  key: mongodb_uri
+            - name: MONGODB_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: mongodb-secret
+                  key: mongo-root-username
+            - name: MONGODB_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: mongodb-secret
+                  key: mongo-root-password

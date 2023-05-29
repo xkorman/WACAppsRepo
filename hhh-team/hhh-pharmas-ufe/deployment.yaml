@@ -1,29 +1,25 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hhh-team-ufe-deployment      # meno deployment-u od ktorého sa odvádza meno podu
+  name: hhh-pharmas-ufe-deployment
 spec:
   replicas: 1
   selector:
     matchLabels:
-      pod: hhh-team-ufe-label    # tento riadok je len označenie štítku
-        # key-value pair pod=ambualnce ufe
-      # určený pre výber podov s rovnakým štítkom
-  template:                    # šablóna pre vytvorenie replík podov
+      pod: hhh-pharmas-ufe-label
+  template:
     metadata:
       labels:
-        pod: hhh-team-ufe-label    # štítky podu
+        pod: hhh-pharmas-ufe-label
     spec:
       containers:
-        - name: hhh-team-ufe-container # meno kontaineru - v pod-e ich môže byť viac
-          image: holubov/wac-team25:1.0.0-19
+        - name: hhh-pharmas-ufe-container
+          image: holubov/hhh-pharmas-ufe:1.0.0-58
           imagePullPolicy: Always
           ports:
             - name: http
               containerPort: 80
-          resources:                  # určenie kvót pre využívané fyzické prostriedky
-            # je dôležité pre riadenie záťaže v rámci kubernetes
-            # klastra
+          resources:
             requests:
               memory: "32M"
               cpu: "0.1"

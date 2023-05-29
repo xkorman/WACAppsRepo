@@ -1,0 +1,13 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: mf-e-recipes-be
+spec:
+  type: ClusterIP
+  selector:
+    pod: mf-e-recipes-be-label
+  ports:
+    - name: webapi-s-port
+      protocol: TCP
+      port: 80
+      targetPort: 8080

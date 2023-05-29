@@ -1,17 +1,25 @@
 apiVersion: fe.milung.eu/v1
 kind: WebComponent
 metadata:
-  name: hhh-team-ufe
+  name: hhh-pharmas-ufe
 spec:
-  module-uri: http://hhh-team-ufe.wac-hospital/build/wac-team25.esm.js
+  module-uri: http://hhh-pharmas-ufe.wac-hospital/build/wac-team25.esm.js
+  # module web komponentu pre tento mikroFE
+  # - umiestnený v namespace wac-hospital
   navigation:
-    - element: hhh-app
-      path: hhh-team
-      title: HHH Team project
-      details: Semesteral project of team HHH
+    - element: hhh-app    # element, ktorý bude vložený na stránku
+      # pri navigácii na zoznam čakajúcich
+      path: hhh-pharmas      # cesta, ktora sa zobrazi v address bare v prehliadaci, ked bude tento mikroFE aktívny
+      title: HHH app      # názov mikro aplikácie
+      details: HHH app details
       attributes:
         - name: base-path
-          value: /ui/hhh-team/
-  preload: false
-  proxy: true
-  hash-suffix: v1alpha2
+          value: /ui/hhh-pharmas/
+        - name: api-uri
+          value: /hhh-pharmas-api
+  preload: false                    # určuje, či má byť web komponent načítaný spolu s hlavnou stránkou
+  proxy: true                       # pre komponenty v rámci klastra, neprístupné na verejnej sieti
+  # musí byť táto hodnota nastavená na true
+  hash-suffix: v1alpha1             # voliteľný suffix pre načítanie modulu web komponentu - jeho zmenou
+  # sa mení názov URL pre modul a tým je možné predísť problémom
+  # s verziami vo vyrovnávacích pamätiach

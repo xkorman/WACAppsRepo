@@ -1,0 +1,21 @@
+apiVersion: fe.milung.eu/v1
+kind: WebComponent
+metadata: 
+  name: xkollarovap-my-project-ufe
+spec:   
+  module-uri: http://xkollarovap-my-project-ufe.wac-hospital/build/my-project.esm.js
+  navigation:
+    - element: xkollarovap-doctor-schedule
+      path: xkollarovap-doctor-schedule            
+      title: Doktor termíny xkollarovap
+      details: Spravuje termíny, kedy je dostupné vyšetrenie
+      attributes:
+        - name: base-path
+          value: /ui/xkollarovap-doctor-schedule/
+        - name: api-uri
+          value: /xkollarovap-doctor-schedule-list-api
+        - name: doctor-id
+          value: dr-abc
+  preload: false                    
+  proxy: true                                           
+  hash-suffix: v1alpha2                        

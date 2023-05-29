@@ -1,0 +1,183 @@
+{
+  "type": "object",
+  "properties": {
+    "spec": {
+      "type": "object",
+      "required": [
+        "module-uri"
+      ],
+      "properties": {
+        "module-uri": {
+          "description": "URI from which the module shall be access. The actual module is cached by the \nconroller, to improve performance and ato void CORS issues. \n",
+          "type": "string",
+          "format": "url"
+        },
+        "preload": {
+          "description": "The modules are not preloaded by default but only when naviagting to some of the \nsubpaths mentioned at the `navigation` list. Setting this property to true\nemsures that the module is loaded when application starts.\n",
+          "type": "boolean",
+          "default": false
+        },
+        "proxy": {
+          "description": "Specifies if the web components loading shall be proxied by the controller. \nThis is usefull if the web component is served from the cluster and \nnot accessible from the outside of the cluster network. The module will be served\nfrom the URL `<base controller URI>/web-components/<WebComponent name>.jsm`. \nThis is recommended approach for the standard assumed use-case.\n",
+          "type": "boolean",
+          "default": true
+        },
+        "hash-suffix": {
+          "description": "A hash string to identify the particular version of the module uri in case of \ncontroller proxying it. If `proxy` property is set, and `hash` property is set then \nthe final module file name is `<WebComponent name>.<hash-suffix>.jsm` and the resource is \nassumed to never expire. To refresh user agents` caches, one needs to change the hash \nto a new unique value. \n",
+          "type": "string"
+        },
+        "style-relative-paths": {
+          "description": "Array of the relative paths (relative to module-uri), containing the CSS styles\nrequired for this webcomponent module. Preferably styles are embedded in or loaded by \nthe module, but some legacy styles requires extra link element\n",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "contextElements": {
+          "description": "Components that can be displayed in special context, e.g. `ufe-app-shell` for top level\napplication shell, `my-menu-item` for the components to display in the custom menu, etc.\n",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "contextNames",
+              "element"
+            ],
+            "properties": {
+              "contextNames": {
+                "details": "List of context names in which this element is intended to shown",
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "element": {
+                "details": "The HTML element tag name to use when navigated to the specific path",
+                "type": "string",
+                "example": "my-element-name"
+              },
+              "priority": {
+                "description": "The priority of the navigation entry in lists. The entries with higher priority are  \ndisplayed before entries with the lower proorities, if there is ordering \nsupported by the list. Default priority is 0\n",
+                "type": "number",
+                "default": 0
+              },
+              "attributes": {
+                "description": "A list of key-value pairs to assign specific attributes to the element. The `name` is\nused as the attribute name. The `value` can be any valid json type. \n",
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "name",
+                    "value"
+                  ],
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "x-kubernetes-preserve-unknown-fields": true
+                    }
+                  },
+                  "additionalProperties": false
+                }
+              },
+              "roles": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "navigation": {
+          "description": "Components with the navigation specification may be used as sub-paths\nand are considered as a workspaces or application on its own within\nthe composed application shell\n",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "path",
+              "title",
+              "element"
+            ],
+            "properties": {
+              "path": {
+                "description": "by navigating to the specific subpath the app shell will place the `element` \non the main workspace (content) of the shell\n",
+                "type": "string",
+                "example": "/my-app"
+              },
+              "title": {
+                "description": "The title is used to present the links to the particular workspace, or to display it in \nnavigation lists, or as a title when on the particular path\n",
+                "type": "string",
+                "example": "My Cool Embeded And Navigable App"
+              },
+              "priority": {
+                "description": "The priority of the navigation entry in lists. The entries with higher priority are  \ndisplayed before entries with the lower proorities, if there is ordering \nsupported by the list. Default priority is 0\n",
+                "type": "number",
+                "default": 0
+              },
+              "details": {
+                "description": "Additional description to explain to the user the purpose of the component. It is shown \nin addition to the title in the navigation lists\n",
+                "type": "string"
+              },
+              "element": {
+                "details": "The HTML element tag name to use when navigated to the specific path",
+                "type": "string",
+                "example": "my-element-name"
+              },
+              "attributes": {
+                "description": "A list of key-value pairs to assign specific attributes to the element. THe `name` is\nused as the attribute name. The `value` can be any valid json type. \n",
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "name",
+                    "value"
+                  ],
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "x-kubernetes-preserve-unknown-fields": true
+                    }
+                  },
+                  "additionalProperties": false
+                }
+              },
+              "icon": {
+                "type": "object",
+                "required": [
+                  "mime"
+                ],
+                "description": "The optional icon to associate with the navigable component. SVG preferred.  Either\n`data` property shall provide base64 encoded icon/image data or `url`` to the image source\nshall be specified. The `mime` property must specify proper mime type of the icon/image\n",
+                "properties": {
+                  "mime": {
+                    "type": "string"
+                  },
+                  "data": {
+                    "type": "string",
+                    "format": "byte"
+                  },
+                  "url": {
+                    "type": "string",
+                    "format": "url"
+                  }
+                },
+                "additionalProperties": false
+              },
+              "roles": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

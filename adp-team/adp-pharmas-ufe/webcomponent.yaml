@@ -13,10 +13,12 @@ spec:
         # pri navigácii na zoznam čakajúcich
       path: adp-pharmas # cesta, ktora sa zobrazi v address bare v prehliadaci, ked bude tento mikroFE aktívny
       title: Projekt adp # názov mikro aplikácie
-      details: Hello world adp app
+      details: Adp app - pharmas
       attributes:
         - name: base-path
           value: /ui/adp-pharmas/
+        - name: api-uri
+          value: /adp-pharmas-api
   preload: false # určuje, či má byť web komponent načítaný spolu s hlavnou stránkou
   proxy:
     true # pre komponenty v rámci klastra, neprístupné na verejnej sieti

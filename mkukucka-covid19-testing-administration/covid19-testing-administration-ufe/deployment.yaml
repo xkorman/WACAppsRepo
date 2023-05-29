@@ -16,7 +16,8 @@ spec:
     spec:
       containers:
       - name: covid19-testing-administration-ufe-container # meno kontaineru - v pod-e ich môže byť viac
-        image: xkukuckam/covid19-testing-administration-ufe:1.0.0-29
+        image: xkukuckam/covid19-testing-administration-ufe:1.0.0-49
+
         imagePullPolicy: Always
         ports:
         - name: http

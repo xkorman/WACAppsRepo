@@ -1,6 +1,7 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-  - ./stesch-ambulance-ufe
+  - stesch-ambulance-ufe
+  - stesch-ambulance-webapi
 commonLabels:
   app: stesch-ambulance

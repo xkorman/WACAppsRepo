@@ -5,15 +5,17 @@ metadata:
 spec:
   module-uri: http://hospital-equipment-ufe.wac-hospital/build/hospital-equipment-project.esm.js
   navigation:
-    - element: af-mb-equipment-list
-      path: hospital-equipment-list
+    - element: af-mb-hospital-equipment-app
+      path: hospital-equipment-app
       title: Zoznam nemocničného zariadenia (projekt Billichová, Frniaková)
       details: Spravuje zoznam nemocničného zariadenia
       attributes:
         - name: base-path
-          value: /ui/hospital-equipment-list/
+          value: /ui/hospital-equipment-app/
+        - name: api-uri
+          value: /hospital-equipment-api
         - name: ambulance
-          value: af-mb-team
+          value: af-mb-project
   preload: false
   proxy: true
   hash-suffix: v1alpha2

@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: hospital-equipment-webapi
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /api/$2
+    nginx.ingress.kubernetes.io/use-regex: "true"
+spec:
+  ingressClassName: wac-hospital
+  rules:
+    - http:
+        paths:
+          - path: /hospital-equipment-api(/|$)(.*)
+            pathType: Prefix
+            backend:
+              service:
+                name: hospital-equipment-webapi
+                port:
+                  name: webapi-s-port

@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: mf-e-recipes-be
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /api/$2
+    nginx.ingress.kubernetes.io/use-regex: "true"
+spec:
+  ingressClassName: wac-hospital
+  rules:
+    - http:
+        paths:
+          - path: /mf-e-recipes-be(/|$)(.*)
+            pathType: Prefix
+            backend:
+              service:
+                name: mf-e-recipes-be
+                port:
+                  name: webapi-s-port

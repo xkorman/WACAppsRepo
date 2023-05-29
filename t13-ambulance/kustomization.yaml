@@ -1,7 +1,7 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-- ./t13-ambulance-t13
-# - ./t13-ambulance-webapi
+  - ./t13-ambulance-t13
+  - ./t13-ambulance-webapi
 commonLabels:
   app: t13-ambulance-t13

@@ -3,25 +3,19 @@ kind: WebComponent
 metadata:
   name: kali-project-ambulance
 spec:
-  module-uri:
-    http://kali-project-ambulance.wac-hospital/build/kali-pharmas.esm.js
-    # module web komponentu pre tento mikroFE
-    # - umiestnený v namespace wac-hospital
+  module-uri: http://kali-project-ambulance.wac-hospital/build/medimanage.esm.js
   navigation:
-    - element:
-        kali-app # element, ktorý bude vložený na stránku
-        # pri navigácii na zoznam čakajúcich
-      path: kali-ambulance # cesta, ktora sa zobrazi v address bare v prehliadaci, ked bude tento mikroFE aktívny
+    - element: router-app
+      path: ambulance-kali
       title: Projekt Kali Ambulance # názov mikro aplikácie
       details: Pirky X Pablo X Dj Peter Pann
       attributes:
         - name: base-path
-          value: /ui/kali-ambulance/
-  preload: false # určuje, či má byť web komponent načítaný spolu s hlavnou stránkou
-  proxy:
-    true # pre komponenty v rámci klastra, neprístupné na verejnej sieti
-    # musí byť táto hodnota nastavená na true
-  hash-suffix:
-    v1alpha2 # voliteľný suffix pre načítanie modulu web komponentu - jeho zmenou
-    # sa mení názov URL pre modul a tým je možné predísť problémom
-    # s verziami vo vyrovnávacích pamätiach
+          value: /ui/ambulance-kali/
+        - name: ambulance
+          value: bobulova
+        - name: api-uri
+          value: /kali-waiting-list-api
+  preload: false
+  proxy: true
+  hash-suffix: v1alpha2
