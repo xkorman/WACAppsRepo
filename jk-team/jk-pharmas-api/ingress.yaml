@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: jk-physres-webapi
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /api/$2
+    nginx.ingress.kubernetes.io/use-regex: "true"
+spec:
+  ingressClassName: wac-hospital
+  rules:
+  - http:
+      paths:
+      - path: /jk-physres-api(/|$)(.*)
+        pathType: Prefix
+        backend:
+          service:
+            name: jk-physres-webapi
+            port:
+              name: webapi-s-port

@@ -4,17 +4,16 @@ metadata:
   name: jk-physres-ufe
 spec:   
   module-uri: http://jk-physres-ufe.wac-hospital/build/phys-reservations.esm.js  
-                     # module web komponentu pre tento mikroFE 
-                     # - umiestnený v namespace wac-hospital
   navigation:
-    - element: term-list    # element, ktorý bude vložený na stránku 
-                                    # pri navigácii na zoznam čakajúcich
-      path: jk-physres-term      # cesta, ktora sa zobrazi v address bare v prehliadaci, ked bude tento mikroFE aktívny
-      title: First component of JK-PHYSRES     # názov mikro aplikácie
+    - element: main-app 
+      path: jk-physres-term 
+      title: JK-PHYSRES  
       details: Works with reservations. Created by Martin Jankuliak and David Korman.
-  preload: true                    # určuje, či má byť web komponent načítaný spolu s hlavnou stránkou
-  proxy: true                       # pre komponenty v rámci klastra, neprístupné na verejnej sieti 
-                                    # musí byť táto hodnota nastavená na true 
-  hash-suffix: v1alpha1             # voliteľný suffix pre načítanie modulu web komponentu - jeho zmenou 
-                                    # sa mení názov URL pre modul a tým je možné predísť problémom 
-                                    # s verziami vo vyrovnávacích pamätiach
+      attributes:                   
+        - name: base-path
+          value: /ui/jk-physres-term
+        - name: api-uri
+          value: /jk-physres-api
+  preload: true                    
+  proxy: true                       
+  hash-suffix: v1alpha1      

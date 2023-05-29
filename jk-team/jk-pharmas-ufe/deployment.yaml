@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: jk-physres-ufe-container # meno kontaineru - v pod-e ich môže byť viac
-        image: 'xkorman/jk-physres-ufe'
+        image: 'xkorman/jk-physres-ufe:1.0.0-76'
         imagePullPolicy: Always
         ports:
         - name: http
